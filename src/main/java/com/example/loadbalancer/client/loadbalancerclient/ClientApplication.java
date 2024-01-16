@@ -35,7 +35,7 @@ public class ClientApplication {
 			URI uri = new URI("http://test-service/test");
 			System.out.println("URI ======>>>>> " + uri);
 			String response =
-					loadBalancedClient.get().uri(uriBuilder -> uriBuilder.scheme("http").host("test-service").path("/hello")
+					loadBalancedClient.get().uri(uriBuilder -> uriBuilder.scheme("http").host("test-service").path("/test")
 							.queryParam("reqParam", "{reqParam}")
 							.queryParam("param","{param}")
 							.build("{”parent-a1\":{“attrib1”:true,“attrib2\":“value1”,“attrib3\":3,“parent-a2”:{“attrib4\":17,“attrib5”:“abc117\"}}}","{“parent-b1”:{“attrib11\":true,“attrib12”:“value1\",“attrib13”:3,“parent-b2\":{“attrib14”:17,“attrib15\":“abc117”}}}"))
